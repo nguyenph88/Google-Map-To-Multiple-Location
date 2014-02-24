@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Displaying text directions with <code>setPanel()</code></title>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ5mikDmEI9ocuSjHSntqNDhuoUszpvFw&sensor=true&libraries=places"></script>
+	<script src="googleapi.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+  </head>
+  <body>
+
+
+    
+        <input id="pac-input" class="controls" type="text"
+            placeholder="Enter a location">
+        <div id="type-selector" class="controls">
+          <label id="form-status">Where are you</label>
+        </div>
+
+     <div id="control"> 
+        Travel Mode:
+        <select id="mode" onchange="calcRoute();"><br>
+          <option value="TRANSIT">Transit</option>
+          <option value="WALKING">Walking</option>
+          <option value="BICYCLING">Bicycling</option>
+          <option value="DRIVING">Driving</option>
+        </select>
+
+
+    </div>
+    
+    <div id="content"></div>
+        <div id="map-canvas"></div>
+        <div id="info-panel">
+            <div id="task-panel">Task Menu</div>
+            <div id="directions-panel">Direction</div>
+        </div>
+    <div id="footer"></div>
+  </body>
+</html>
+
