@@ -15,25 +15,19 @@
 	border: 1px solid #999;
   }
 
-  .content {
-    height:99%;
-	float:top;
-  }
   
   #map-canvas {
 	float: left;
 	width:65%;
+	height:80%;
   }
   
-  .info-panel {
-	width:35%;
-	float: right;
-	
-  }
-  #directions-panel {
-	height: 50%;
-	float: bottom;
 
+  #directions-panel {
+    height: 80%;
+    float: right;
+    width: 35%;
+    overflow: auto;
   }
   
   #task-panel {
@@ -64,10 +58,15 @@
   }
 
   @media print {
-	#map-canvas {
-	  height: 500px;
-	  margin: 0;
-	}
+    #map-canvas {
+      height: 500px;
+      margin: 0;
+    }
+
+    #directions-panel {
+      float: none;
+      width: auto;
+    }
 
 
   }

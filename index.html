@@ -13,34 +13,33 @@
     
   </head>
   <body>
-
-
-    
-        <input id="pac-input" class="controls" type="text"
+         <div id="control"> 
+            Travel Mode:
+            <select id="mode"><br>
+              <option value="TRANSIT">Transit</option>
+              <option value="WALKING">Walking</option>
+              <option value="BICYCLING">Bicycling</option>
+            </select>
+        </div>
+        
+        
+           <input id="pac-input" class="controls" type="text"
             placeholder="Enter a location">
+
         <div id="type-selector" class="controls">
-          <label id="form-status">Where are you</label>
+          <label id="form-status">Where to go</label>
         </div>
 
-     <div id="control"> 
-        Travel Mode:
-        <select id="mode" onchange="calcRoute();"><br>
-          <option value="TRANSIT">Transit</option>
-          <option value="WALKING">Walking</option>
-          <option value="BICYCLING">Bicycling</option>
-          <option value="DRIVING">Driving</option>
-        </select>
 
-
-    </div>
-    
-    <div id="content"></div>
         <div id="map-canvas"></div>
-        <div id="info-panel">
-            <div id="task-panel">Task Menu</div>
-            <div id="directions-panel">Direction</div>
-        </div>
-    <div id="footer"></div>
+        <div id="directions-panel">Direction</div>
+       
+        
+	<div id="footer">
+    If you know where to go when type in the address in the address bar. Otherwise if you want particular thing but dont know where to buy then type the name of the product here and I will help you find aplace:<br>
+<button onclick="calcRoute();">Route Me</button> 
+    
+    </div>
   </body>
 </html>
 
